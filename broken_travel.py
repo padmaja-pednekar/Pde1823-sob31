@@ -10,7 +10,7 @@ year = int(input("Greetings! What is your year of origin? ")) #padma_pednekar ch
 
 if year < 1900: #padma_pednekar added colon (:) at the end of the if statement, <= changed to <
     print ('Woah, that\'s the past!')  #padma_pednekar changed "that's" to "that\'s", i.e. used escape sequence.
-elif year >= 1900 and year <= 2020: #padma_pednekar changed && to and; > changed to >= ; changed < to <=
+elif year >= 1900 and year <= 2020: #padma_pednekar changed && to and; operator > changed to >= ; operator changed < to <=
     print ("That's totally the present!")
 else: #padma_pednekar changed the elif to else
     print ("Far out, that's the future!!")
