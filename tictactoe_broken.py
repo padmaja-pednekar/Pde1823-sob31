@@ -67,7 +67,7 @@ def add_piece(game, player, row, column):
     row: 0-index row
     column: 0-index column
     """
-    game[row][column+1] = player
+    game[row][column] = player #padma_pednekar removed +1 in column index
     return game
 
 def check_space_empty(game, row, column):
@@ -101,9 +101,9 @@ if __name__ == '__main__':
         while not available: #padma_pednekar added colon (:) after the while statement
             row = convert_input_to_coordinate(int(input("Which row? (start with 1) ")))
             column = convert_input_to_coordinate(int(input("Which column? (start with 1) ")))
-            available = check_space_empty(game, row)
+            available = check_space_empty(game, row, column) #padma_pednekar added column as another arguement
         game = add_piece(game, player, row, column)
         display_game(game)
         player = switch_player(player)
-#        winner = check_winner(game)
+        winner = check_winner(game) #padma_pednekar removed the hashtag
     display_winner(winner)
