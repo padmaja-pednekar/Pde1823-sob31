@@ -21,36 +21,37 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #padma-pednekar edited and added int() function
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: ")) #padma-pednekar replaced str() with int(); the variable exam_3 is changed to exam_three to match the item in the list.
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three] #padma-pednekar added commas (,) to separate items in the list
 sum = 0
-for grade in grade:
+for grade in grades: #for grade in grade to for grade in grades
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #padma-pednekar changed variable name from grdes to grades
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #padma-pednekar added colon (:) at the end of the elif statement
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg > 70 and avg < 80: #padma_pednekar changed 69 to 70
+    letter_grade = "C" #padma-pednekar changed "C' to "C"
+elif avg <= 70 and avg >= 60: #padma_pednekar changed the range values from 60-70.
     letter_grade = "D"
-elif:
+else: #padma-pednekar changed from elif to else
     letter_grade = "F"
 
-for grade in grades:
-    print("Exam: " + str(grade))
+#padma-pednekar removed the statement "for grade in grades:"
+print(f"Exam: {grades[0]},{grades[1]},{grades[2]}") #padma-pednekar removed the indentation; changed format to get all grades.
 
-    print("Average: " + str(avg))
+print("Average: " + str(avg)) #padma-pednekar removed the indentation
 
-    print("Grade: " + letter_grade)
+print("Grade: " + letter_grade) #padma-pednekar removed the indentation
 
-if letter-grade is "F":
-    print "Student is failing."
+
+if letter_grade == "F": #padma-pednekar changed the variable name from letter-grade to letter_grade; 'is' is changed to '=='
+    print("Student is failing.") #padma-pednekar added missing paranthesis () for the print statement
 else:
-    print "Student is passing."
+    print("Student is passing.") #padma-pednekar added missing paranthesis () for the print statement
